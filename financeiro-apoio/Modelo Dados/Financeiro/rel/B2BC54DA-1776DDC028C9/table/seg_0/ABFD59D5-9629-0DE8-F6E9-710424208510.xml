@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABFD59D5-9629-0DE8-F6E9-710424208510" name="GRUPO_OPERACAO">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:14:39 UTC</createdTime>
+<commentInRDBMS>Grupo para organização de operações.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<abbreviation>GROP</abbreviation>
+<schemaObject>BE359C05-AFC2-02B9-7D43-1D709A4B9271</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GROP_ID_GRUPO_OPERACAO" id="E495AC38-D7F4-D774-2111-CD6AB367226F">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:15:38 UTC</createdTime>
+<commentInRDBMS>Identificador do grupo de operações.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROP_NM_GRUPO_OPERACAO" id="30F32DFE-A27B-E6CE-130E-610743A81428">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:15:38 UTC</createdTime>
+<commentInRDBMS>Nome do grupo de operações.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>640AC79A-97F3-D1B2-41B0-219D19328759</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROP_DT_CRIACAO" id="DCD74E19-06DF-67D3-3D7B-A47671061D23">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:41:10 UTC</createdTime>
+<commentInRDBMS>Data de criação do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROP_DT_ATUALIZACAO" id="1D66F1EA-80D7-6C19-3375-D3569A36E530">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:41:10 UTC</createdTime>
+<commentInRDBMS>Data de atualização do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROP_NR_VERSAO" id="AD5809EE-13F1-CDB9-F16B-4AFA43CC57F5">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:41:10 UTC</createdTime>
+<commentInRDBMS>Número da versão do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>E16E8197-194B-46E6-1291-8D34535B4090</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8EC2025E-6D08-06DC-927D-C7C2F020DB8E" name="PK_GROP">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:15:39 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E495AC38-D7F4-D774-2111-CD6AB367226F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

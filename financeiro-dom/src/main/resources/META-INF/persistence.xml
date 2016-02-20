@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+	<persistence-unit name="financeiroPU" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>jdbc/sgpf-ds</jta-data-source>
+		
+		<mapping-file>orm/NamedQueries.orm.xml</mapping-file>
+		
+		<class>br.com.sgpf.common.domain.entity.AbstractEntity</class>
+		<class>br.com.sgpf.common.domain.entity.AbstractUUIDEntity</class>
+		
+		<class>br.com.sgpf.app.financeiro.domain.entity.Banco</class>
+		<class>br.com.sgpf.app.financeiro.domain.entity.Conta</class>
+		<class>br.com.sgpf.app.financeiro.domain.entity.SaldoMensalConta</class>
+		<class>br.com.sgpf.app.financeiro.domain.entity.GrupoOperacao</class>
+		<class>br.com.sgpf.app.financeiro.domain.entity.Operacao</class>
+		<class>br.com.sgpf.app.financeiro.domain.entity.OperacaoContaPK</class>
+		<class>br.com.sgpf.app.financeiro.domain.entity.OperacaoConta</class>
+		<class>br.com.sgpf.app.financeiro.domain.entity.TipoAplicacao</class>
+		<class>br.com.sgpf.app.financeiro.domain.entity.Aplicacao</class>
+		<class>br.com.sgpf.app.financeiro.domain.entity.PosicaoMensalAplicacao</class>
+		
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
+			<property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" />
+			<property name="org.hibernate.flushMode" value="COMMIT"/>
+
+			<property name="hibernate.discriminator.ignore_explicit_for_joined" value="true"/>
+			<property name="hibernate.cache.use_second_level_cache" value="false"/>
+
+			<property name="hibernate.hbm2ddl.auto" value="validate" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+
+			<property name="hibernate.max_fetch_depth" value="1"/>
+			<property name="hibernate.jdbc.fetch_size" value="10"/>
+			<property name="hibernate.jdbc.batch_size" value="50"/>
+
+			<property name="hibernate.order_inserts" value="true"/>
+			<property name="hibernate.order_updates" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>

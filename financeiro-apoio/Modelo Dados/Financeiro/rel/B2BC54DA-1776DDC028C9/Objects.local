@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="SchemaObject" objectID="BE359C05-AFC2-02B9-7D43-1D709A4B9271" name="SGPF_FNC" seqName="seg_0"/>
+   <object objectType="Table" objectID="26B10A64-F84F-4C43-3C8C-C478C75551BC" name="APLICACAO" seqName="seg_0"/>
+   <object objectType="Table" objectID="F6E6C571-56C7-CCF6-AE14-2C70EFE9664A" name="BANCO" seqName="seg_0"/>
+   <object objectType="Table" objectID="095FBDFB-8533-D95C-2CEC-2BDA4378E4AA" name="CONTA" seqName="seg_0"/>
+   <object objectType="Table" objectID="ABFD59D5-9629-0DE8-F6E9-710424208510" name="GRUPO_OPERACAO" seqName="seg_0"/>
+   <object objectType="Table" objectID="26635A01-3C62-08A6-421C-BA11308A9E2B" name="OPERACAO" seqName="seg_0"/>
+   <object objectType="Table" objectID="D1A89A8C-6DAB-5C96-3CF9-39DD2D3288FE" name="OPERACAO_CONTA" seqName="seg_0"/>
+   <object objectType="Table" objectID="041C1E42-3AB5-84A5-36F7-5700CC6BD011" name="POSICAO_MENSAL_APLICACAO" seqName="seg_0"/>
+   <object objectType="Table" objectID="B0856C57-E3FD-D3D6-E9A6-ACE23E881E8D" name="SALDO_MENSAL_CONTA" seqName="seg_0"/>
+   <object objectType="Table" objectID="05C03097-B89E-E7A9-42D9-9D130D13E981" name="TIPO_APLICACAO" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="750BB60D-A220-C7D3-9691-319CAD074FF1" name="FK_APLI_POMA" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="15897C07-6193-EB1C-95C3-AD843BF20836" name="FK_BANC_CONT" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="605CB970-5710-AD51-55D5-00F80BFC7226" name="FK_CONT_APLI" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C5E93C4B-54B3-408B-C13E-596188ADB4C1" name="FK_CONT_OPCO" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="78B376AC-4049-789C-326B-7B609D6C4D3C" name="FK_CONT_SAMC" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E8911D01-32C1-D0BF-1963-6E5706D88514" name="FK_GROP_OPER" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="36C1DB25-97A7-1C3B-1A6D-57F696C1A356" name="FK_OPER_OPCO" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="596D1427-B1FB-C147-71E0-00F4380EF64B" name="FK_TIAP_APLI" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="05C03097-B89E-E7A9-42D9-9D130D13E981" name="TIPO_APLICACAO">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:40:59 UTC</createdTime>
+<commentInRDBMS>Tipo de aplicação financeira.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<abbreviation>TIAP</abbreviation>
+<schemaObject>BE359C05-AFC2-02B9-7D43-1D709A4B9271</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TIAP_ID_TIPO_APLICACAO" id="5681BB91-1EA3-B538-74F2-5B07B2DE6590">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:42:07 UTC</createdTime>
+<commentInRDBMS>Identificador do tipo de aplicação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIAP_NM_TIPO_APLICACAO" id="2CCED834-D48C-E422-1758-4E39C9FF5E45">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:43:14 UTC</createdTime>
+<commentInRDBMS>Nome do tipo de aplicação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>640AC79A-97F3-D1B2-41B0-219D19328759</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIAP_DT_CRIACAO" id="4CA7F0B6-7D39-565E-F137-16E09F874497">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:44:17 UTC</createdTime>
+<commentInRDBMS>Data de criação do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIAP_DT_ATUALIZACAO" id="7CB672E9-77EE-B5D4-4B29-39BB96372B55">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:44:32 UTC</createdTime>
+<commentInRDBMS>Data de atualização do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIAP_NR_VERSAO" id="4AB4F68D-AE0F-6189-D537-D62B9410E14C">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:44:08 UTC</createdTime>
+<commentInRDBMS>Número da versão do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>E16E8197-194B-46E6-1291-8D34535B4090</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E464CAA-92FE-C6EA-CA4C-945767935879" name="PK_TIAP">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:42:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5681BB91-1EA3-B538-74F2-5B07B2DE6590"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

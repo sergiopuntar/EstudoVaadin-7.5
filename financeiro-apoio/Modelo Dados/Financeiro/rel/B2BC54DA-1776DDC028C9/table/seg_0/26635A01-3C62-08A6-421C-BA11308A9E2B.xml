@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26635A01-3C62-08A6-421C-BA11308A9E2B" name="OPERACAO">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:16:44 UTC</createdTime>
+<commentInRDBMS>Operação financeira de um valor em um dia.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<abbreviation>OPER</abbreviation>
+<schemaObject>BE359C05-AFC2-02B9-7D43-1D709A4B9271</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OPER_ID_OPERACAO" id="61BBEA40-3D18-E0F0-F9A1-EEFF45476900">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:18:05 UTC</createdTime>
+<commentInRDBMS>Identificador da operação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROP_ID_GRUPO_OPERACAO" id="069B491B-C503-B9D4-5E2E-D02451014F53">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:01:06 UTC</createdTime>
+<commentInRDBMS>Identificador do grupo da operação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<delegate>E495AC38-D7F4-D774-2111-CD6AB367226F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E8911D01-32C1-D0BF-1963-6E5706D88514" referredColumn="E495AC38-D7F4-D774-2111-CD6AB367226F"/>
+</associations>
+</Column>
+<Column name="OPER_IN_AMBITO" id="5EE80178-0DCD-00E4-5071-F2CD7ADF28F5">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 17:03:20 UTC</createdTime>
+<commentInRDBMS>Indicador do âmbito da operação. Valores aceitos: (I)nterno, (E)xterno.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPER_VL_OPERACAO" id="8A3F031D-5D62-B183-EC9B-92EF2C513036">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:18:05 UTC</createdTime>
+<commentInRDBMS>Valor movimentado na operação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>9D6A2B4F-76EE-9AE7-67A5-193D61A3FC57</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPER_DT_OPERACAO" id="E518571C-5E39-A821-4007-2A20B3ACBA98">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:18:05 UTC</createdTime>
+<commentInRDBMS>Data de realização da operação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPER_DS_OPERACAO" id="6AFA4A4C-A289-C50D-5810-3FBE99A30B64">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:18:05 UTC</createdTime>
+<commentInRDBMS>Descrição da operação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>320F4048-71D9-073A-E8CC-4A4A6845B3E9</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPER_DT_CRIACAO" id="730F6C63-A534-2842-077D-A473733E01EE">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:42:35 UTC</createdTime>
+<commentInRDBMS>Data de criação do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPER_DT_ATUALIZACAO" id="AE737600-789B-0844-75BA-7C35273A437C">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:42:35 UTC</createdTime>
+<commentInRDBMS>Data de atualização do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPER_NR_VERSAO" id="C304E89F-D5C7-CE37-FEF5-EF0B63C22EE0">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:42:35 UTC</createdTime>
+<commentInRDBMS>Número da versão do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>E16E8197-194B-46E6-1291-8D34535B4090</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="498D3826-9000-B7E2-4956-471A8A7CA5CB" name="PK_OPER">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:18:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61BBEA40-3D18-E0F0-F9A1-EEFF45476900"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4847385-EEDA-0597-3378-34AE1C8ADCEB" name="IN_FK_GROP_OPER">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:04:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="069B491B-C503-B9D4-5E2E-D02451014F53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD2EF122-86C6-3916-DE6F-34BC1F89CBC3" name="FK_GROP_OPER">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:01:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="069B491B-C503-B9D4-5E2E-D02451014F53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_OPER_IN_AMBITO" directorySegmentName="seg_0" id="7FEDBB76-02A8-28AA-A76C-26C9086BBEDD">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 17:03:53 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<rule>OPER_IN_AMBITO IN (&apos;I&apos;, &apos;E&apos;)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

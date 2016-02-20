@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="041C1E42-3AB5-84A5-36F7-5700CC6BD011" name="POSICAO_MENSAL_APLICACAO">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:43:39 UTC</createdTime>
+<commentInRDBMS>Posição em um mês de uma aplicação financeira.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<abbreviation>POMA</abbreviation>
+<schemaObject>BE359C05-AFC2-02B9-7D43-1D709A4B9271</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="POMA_ID_EXTRATO_APLICACAO" id="D78E6AC2-4B92-3349-668B-8BE287285AEE">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:45:19 UTC</createdTime>
+<commentInRDBMS>Identificador da posição mensal da aplicação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APLI_ID_APLICACAO" id="3D7078E0-6A4E-4124-B5C5-0019075550D6">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:02:34 UTC</createdTime>
+<commentInRDBMS>Identificador da aplicação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<delegate>2CAA72A6-DB73-BE76-0A4A-DEC0C097D754</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="750BB60D-A220-C7D3-9691-319CAD074FF1" referredColumn="2CAA72A6-DB73-BE76-0A4A-DEC0C097D754"/>
+</associations>
+</Column>
+<Column name="POMA_NR_ANO" id="20A06F58-58E7-67C1-C4D5-336FEEEF2045">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:51:49 UTC</createdTime>
+<commentInRDBMS>Ano da posição.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>3E8D4253-E2F8-37BA-4AB5-535A2BFA4265</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POMA_IN_MES" id="0B90AF94-4147-4E3F-1E98-06A9DA672C02">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:52:03 UTC</createdTime>
+<commentInRDBMS>Mês da posição. Valores aceitos: JAN, FEV, MAR, ABR, MAI, JUN, JUL, AGO, SET, OUT, NOV, DEZ.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>B9290225-AFA2-2B67-580E-E6E8D4E775E6</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POMA_VL_APLICADO" id="3A72627E-B831-B0CD-8AAF-42B4D43FCF1A">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:53:20 UTC</createdTime>
+<commentInRDBMS>Valor aplicado no mês.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>9D6A2B4F-76EE-9AE7-67A5-193D61A3FC57</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POMA_VL_SALDO_ANTERIOR" id="6C58956E-167A-AAD7-228D-CE988A65619F">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:53:20 UTC</createdTime>
+<commentInRDBMS>Valor do saldo do mês alterior.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>9D6A2B4F-76EE-9AE7-67A5-193D61A3FC57</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POMA_VL_SALDO_BRUTO_FINAL" id="ACC3ED64-C134-F732-5ACD-C4CDCF018C11">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:53:20 UTC</createdTime>
+<commentInRDBMS>Valor do saldo bruto final no mês.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>9D6A2B4F-76EE-9AE7-67A5-193D61A3FC57</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POMA_VL_IR" id="A9B329CA-C755-E993-AD8E-EE416F188FE5">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:55:08 UTC</createdTime>
+<commentInRDBMS>Valor do imposto de renda acumulado até o mês.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>9D6A2B4F-76EE-9AE7-67A5-193D61A3FC57</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POMA_VL_IOF" id="794F4CD9-1625-C981-E39F-E7732C7B5994">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:55:08 UTC</createdTime>
+<commentInRDBMS>Valor do imposto sobre operação financeira acumulado até o mês.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>9D6A2B4F-76EE-9AE7-67A5-193D61A3FC57</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POMA_VL_COME_COTA" id="0CE9DBA5-C94E-57E1-F8E7-CCCCC52E1FA3">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:55:08 UTC</createdTime>
+<commentInRDBMS>Valor do come-cota realizado no mês.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>9D6A2B4F-76EE-9AE7-67A5-193D61A3FC57</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POMA_DT_CRIACAO" id="271417E0-0764-14AD-2D26-A6D23BA16020">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:45:09 UTC</createdTime>
+<commentInRDBMS>Data de criação do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POMA_DT_ATUALIZACAO" id="4429F3AF-2FFD-69CB-6651-89C5E5547B5E">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:45:09 UTC</createdTime>
+<commentInRDBMS>Data de atualização do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POMA_NR_VERSAO" id="1F25E1BE-C180-E3BD-83DE-1F4D89DD68C8">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:45:09 UTC</createdTime>
+<commentInRDBMS>Número da versão do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>E16E8197-194B-46E6-1291-8D34535B4090</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F36CF2F0-994D-667D-4EC1-9909B775FBAA" name="PK_POMA">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:45:20 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D78E6AC2-4B92-3349-668B-8BE287285AEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AECB66F-3043-43C7-E6DB-21D94828BA3B" name="IN_FK_APLI_POMA">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:07:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D7078E0-6A4E-4124-B5C5-0019075550D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AACBA61-3700-C74F-A113-28C756203145" name="FK_APLI_EXMA">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:02:34 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D7078E0-6A4E-4124-B5C5-0019075550D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_POMA_IN_MES" directorySegmentName="seg_0" id="A696174C-E61F-51AC-F520-6920AF4864EC">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:55:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<rule>POMA_IN_MES IN (&apos;JAN&apos;, &apos;FEV&apos;, &apos;MAR&apos;, &apos;ABR&apos;, &apos;MAI&apos;, &apos;JUN&apos;, &apos;JUL&apos;, &apos;AGO&apos;, &apos;SET&apos;, &apos;OUT&apos;, &apos;NOV&apos;, &apos;DEZ&apos;)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

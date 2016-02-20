@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="78B376AC-4049-789C-326B-7B609D6C4D3C" name="FK_CONT_SAMC">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:01:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<containerWithKeyObject>B0856C57-E3FD-D3D6-E9A6-ACE23E881E8D</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>98CCB22B-AF4A-8619-617C-1CF9785A4570</localFKIndex>
+<keyObject>D8279064-C850-5F19-6C48-EB12DD2E3A9A</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

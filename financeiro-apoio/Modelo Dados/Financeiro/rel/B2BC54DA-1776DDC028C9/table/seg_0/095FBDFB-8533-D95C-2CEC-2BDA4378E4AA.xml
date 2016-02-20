@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="095FBDFB-8533-D95C-2CEC-2BDA4378E4AA" name="CONTA">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:03:59 UTC</createdTime>
+<commentInRDBMS>Conta de relacionamento do usuário.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<abbreviation>CONT</abbreviation>
+<schemaObject>BE359C05-AFC2-02B9-7D43-1D709A4B9271</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONT_ID_CONTA" id="3505E2FB-A7B8-A348-8EC5-3546B09E931F">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:05:13 UTC</createdTime>
+<commentInRDBMS>Identificador da conta.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BANC_ID_BANCO" id="3A492489-8423-7BAE-4CE1-C2BCF5D450C7">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:06:16 UTC</createdTime>
+<commentInRDBMS>Identificador do banco.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<delegate>AD00E9D4-71AD-6F94-0171-9C21A5C4DEE4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15897C07-6193-EB1C-95C3-AD843BF20836" referredColumn="AD00E9D4-71AD-6F94-0171-9C21A5C4DEE4"/>
+</associations>
+</Column>
+<Column name="CONT_NM_CONTA" id="9BE6582E-11AF-A701-11AD-EB59BD5BF0A6">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:05:13 UTC</createdTime>
+<commentInRDBMS>Nome da conta.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>640AC79A-97F3-D1B2-41B0-219D19328759</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONT_DS_CONTA" id="ADB2E78E-DC30-A1AE-DBDB-B73F2C88011E">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:05:13 UTC</createdTime>
+<commentInRDBMS>Descrição da conta.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>320F4048-71D9-073A-E8CC-4A4A6845B3E9</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONT_NR_AGENCIA" id="5B78E889-E9D1-E47D-698A-5EBC61A73015">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:05:13 UTC</createdTime>
+<commentInRDBMS>Número da agẽncia da conta.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONT_NR_CONTA" id="1DC5B5F5-F3E2-097B-F586-32A5C4002106">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:05:13 UTC</createdTime>
+<commentInRDBMS>Número da conta</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONT_DT_CRIACAO" id="EA2AD8F5-6EFF-0744-5418-766AC1BA2D2A">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:40:22 UTC</createdTime>
+<commentInRDBMS>Data de criação do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONT_DT_ATUALIZACAO" id="B9509657-8409-1A15-C995-B05EEC968307">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:40:22 UTC</createdTime>
+<commentInRDBMS>Data de atualização do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONT_NR_VERSAO" id="3376B542-F6A3-4190-786D-00339B3CC90F">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:40:22 UTC</createdTime>
+<commentInRDBMS>Número da versão do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>E16E8197-194B-46E6-1291-8D34535B4090</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8279064-C850-5F19-6C48-EB12DD2E3A9A" name="PK_CONT">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:05:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3505E2FB-A7B8-A348-8EC5-3546B09E931F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76BBDA48-D81E-EBB7-CE96-D4F622C6B198" name="IN_FK_BANC_CONT">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:59:39 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A492489-8423-7BAE-4CE1-C2BCF5D450C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BC39239-7B61-D61B-2F0E-BEE1628A5BDA" name="FK_BANC_CONT">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:06:16 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A492489-8423-7BAE-4CE1-C2BCF5D450C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

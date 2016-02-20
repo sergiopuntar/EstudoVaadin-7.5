@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DistinctType class="oracle.dbtools.crest.model.design.datatypes.DistinctType" name="Mes" directorySegmentName="seg_0" id="B9290225-AFA2-2B67-580E-E6E8D4E775E6">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-01 23:57:17 UTC</createdTime>
+<commentInRDBMS>Tipo para representação de meses através de siglas: JAN, FEV, MAR, ABR, MAI, JUN, JUL, AGO, SET, OUT, NOV, DEZ.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<predefined>false</predefined>
+<logicalDataType>LOGDT019</logicalDataType>
+<precision>2</precision>
+<scale>0</scale>
+</DistinctType>

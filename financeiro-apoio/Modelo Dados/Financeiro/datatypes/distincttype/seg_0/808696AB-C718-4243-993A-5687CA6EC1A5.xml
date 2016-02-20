@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DistinctType class="oracle.dbtools.crest.model.design.datatypes.DistinctType" name="UUID" directorySegmentName="seg_0" id="808696AB-C718-4243-993A-5687CA6EC1A5">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-01 22:48:53 UTC</createdTime>
+<commentInRDBMS>Tipo baseado em identificadores únicos universais, para uso em chaves primárias de entidades.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<predefined>false</predefined>
+<logicalDataType>LOGDT025</logicalDataType>
+<precision>0</precision>
+<scale>0</scale>
+<size>36</size>
+</DistinctType>

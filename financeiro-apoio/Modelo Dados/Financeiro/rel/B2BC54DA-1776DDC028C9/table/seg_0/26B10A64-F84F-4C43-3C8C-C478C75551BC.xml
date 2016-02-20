@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26B10A64-F84F-4C43-3C8C-C478C75551BC" name="APLICACAO">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:38:59 UTC</createdTime>
+<commentInRDBMS>Aplicação financeira.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<abbreviation>APLI</abbreviation>
+<schemaObject>BE359C05-AFC2-02B9-7D43-1D709A4B9271</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="APLI_ID_APLICACAO" id="2CAA72A6-DB73-BE76-0A4A-DEC0C097D754">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:39:30 UTC</createdTime>
+<commentInRDBMS>Identificador da aplicação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONT_ID_CONTA" id="2D4C582C-A605-F69D-D9B2-2E09E8597924">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:02:16 UTC</createdTime>
+<commentInRDBMS>Identificador da conta.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<delegate>3505E2FB-A7B8-A348-8EC5-3546B09E931F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="605CB970-5710-AD51-55D5-00F80BFC7226" referredColumn="3505E2FB-A7B8-A348-8EC5-3546B09E931F"/>
+</associations>
+</Column>
+<Column name="TIAP_ID_TIPO_APLICACAO" id="0F2EAABB-37DA-3EA9-B1EE-D4539A19AEE8">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:02:27 UTC</createdTime>
+<commentInRDBMS>Identificador do tipo da aplicação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<delegate>5681BB91-1EA3-B538-74F2-5B07B2DE6590</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="596D1427-B1FB-C147-71E0-00F4380EF64B" referredColumn="5681BB91-1EA3-B538-74F2-5B07B2DE6590"/>
+</associations>
+</Column>
+<Column name="APLI_NM_APLICACAO" id="09CDC696-16B3-B47E-CF44-EE4935848277">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:40:22 UTC</createdTime>
+<commentInRDBMS>Nome da aplicação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>640AC79A-97F3-D1B2-41B0-219D19328759</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APLI_DS_APLICACAO" id="51975995-954E-292F-B0A9-0761DB41D93E">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:40:22 UTC</createdTime>
+<commentInRDBMS>Descrição da aplicação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>320F4048-71D9-073A-E8CC-4A4A6845B3E9</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APLI_DT_VENCIMENTO" id="0ADB26D2-6982-3658-7F3E-DD5008FF506A">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:40:22 UTC</createdTime>
+<commentInRDBMS>Data de vencimento da aplicação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APLI_DT_CRIACAO" id="20105329-DEEF-ECBE-82B1-E144EE0A278F">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:43:50 UTC</createdTime>
+<commentInRDBMS>Data de criação do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APLI_DT_ATUALIZACAO" id="F0437C8A-74A9-441A-E98F-BAC99DCA32AC">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:43:50 UTC</createdTime>
+<commentInRDBMS>Data de atualização do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APLI_NR_VERSAO" id="BE3FCDED-4A05-5303-0916-E39EF664818E">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:43:50 UTC</createdTime>
+<commentInRDBMS>Número da versão do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>E16E8197-194B-46E6-1291-8D34535B4090</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4BC1F131-51FF-5303-4251-02AD2E1CB54F" name="PK_APLI">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:40:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CAA72A6-DB73-BE76-0A4A-DEC0C097D754"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C946E6D5-FB36-C9FE-F87C-81BB531BE998" name="IN_FK_CONT_APLI">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:07:51 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D4C582C-A605-F69D-D9B2-2E09E8597924"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D36F3DCC-5CD7-DBFB-9B8B-8F4BAFF6FD0F" name="IN_FK_TIAP_APLI">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:08:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F2EAABB-37DA-3EA9-B1EE-D4539A19AEE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F668E2F-AAE2-AECA-6297-CE7DBBF23E4A" name="FK_CONT_APLI">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:02:16 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D4C582C-A605-F69D-D9B2-2E09E8597924"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93B4D32D-C5BE-8B55-3A1A-243CB58219DD" name="FK_TIAP_APLI">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:02:27 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F2EAABB-37DA-3EA9-B1EE-D4539A19AEE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

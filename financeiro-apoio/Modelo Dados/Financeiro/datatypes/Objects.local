@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.datatypes.DataTypesDesign>
+   <object objectType="DistinctType" objectID="9D6A2B4F-76EE-9AE7-67A5-193D61A3FC57" name="Moeda" seqName="seg_0"/>
+   <object objectType="DistinctType" objectID="808696AB-C718-4243-993A-5687CA6EC1A5" name="UUID" seqName="seg_0"/>
+   <object objectType="DistinctType" objectID="320F4048-71D9-073A-E8CC-4A4A6845B3E9" name="Texto Livre" seqName="seg_0"/>
+   <object objectType="DistinctType" objectID="640AC79A-97F3-D1B2-41B0-219D19328759" name="Nome" seqName="seg_0"/>
+   <object objectType="DistinctType" objectID="E16E8197-194B-46E6-1291-8D34535B4090" name="Versao" seqName="seg_0"/>
+   <object objectType="DistinctType" objectID="B9290225-AFA2-2B67-580E-E6E8D4E775E6" name="Mes" seqName="seg_0"/>
+   <object objectType="DistinctType" objectID="3E8D4253-E2F8-37BA-4AB5-535A2BFA4265" name="Ano" seqName="seg_0"/>
+   <object objectType="StructuredType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0"/>
+   <object objectType="StructuredType" objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" name="XMLTYPE" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.datatypes.DataTypesDesign>

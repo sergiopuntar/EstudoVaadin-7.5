@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0856C57-E3FD-D3D6-E9A6-ACE23E881E8D" name="SALDO_MENSAL_CONTA">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:34:23 UTC</createdTime>
+<commentInRDBMS>Saldo de início e de fim de um mês em uma conta de relacionamento.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<abbreviation>SAMC</abbreviation>
+<schemaObject>BE359C05-AFC2-02B9-7D43-1D709A4B9271</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SAMC_ID_SALDO_MES" id="5523F766-3B64-AA33-91D5-A83EE9E35F2E">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:35:21 UTC</createdTime>
+<commentInRDBMS>Identificador do saldo mensal da conta.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONT_ID_CONTA" id="036E4AC2-E251-140C-B7E0-461D48EB5FBA">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:01:58 UTC</createdTime>
+<commentInRDBMS>Identificador da conta.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<delegate>3505E2FB-A7B8-A348-8EC5-3546B09E931F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78B376AC-4049-789C-326B-7B609D6C4D3C" referredColumn="3505E2FB-A7B8-A348-8EC5-3546B09E931F"/>
+</associations>
+</Column>
+<Column name="SAMC_NR_ANO" id="45A00378-C792-712D-0DDE-F143CCDEE2E0">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:36:03 UTC</createdTime>
+<commentInRDBMS>Ano do saldo.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>3E8D4253-E2F8-37BA-4AB5-535A2BFA4265</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAMC_IN_MES" id="87EC8E10-7C6F-C129-D091-A0675AA003B7">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:36:03 UTC</createdTime>
+<commentInRDBMS>Mês do saldo. Valores aceitos: 0 - Janeiro, 1 - Fevereiro, 2 - Março, 3 - Abril, 4 - Maio, 5 - Junho, 6 - Julho, 7 - Agosto, 8 - Setembro, 9 - Outubro, 10 - Novembro, 11 - Dezembro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>B9290225-AFA2-2B67-580E-E6E8D4E775E6</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAMC_VL_INICIAL" id="0537F460-39B4-8223-7B0B-B02AF6EF1EBF">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:35:21 UTC</createdTime>
+<commentInRDBMS>Valor do saldo no início do mês.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>9D6A2B4F-76EE-9AE7-67A5-193D61A3FC57</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAMC_VL_FINAL" id="8ED7F72B-EB5D-E326-9BC7-0BC3919451F3">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:35:33 UTC</createdTime>
+<commentInRDBMS>Valor do saldo no fim do mês.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>9D6A2B4F-76EE-9AE7-67A5-193D61A3FC57</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAMC_DT_CRIACAO" id="4FA2E068-56FA-8ADE-6ADF-6BD8E0B68204">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:43:09 UTC</createdTime>
+<commentInRDBMS>Data de criação do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAMC_DT_ATUALIZACAO" id="C67CE78F-064A-7072-3B6A-164C9E209CEB">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:43:09 UTC</createdTime>
+<commentInRDBMS>Data de atualização do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAMC_NR_VERSAO" id="217DF9C5-A3E7-45B0-53D2-807890B8F2E2">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:43:09 UTC</createdTime>
+<commentInRDBMS>Número da versão do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>E16E8197-194B-46E6-1291-8D34535B4090</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="092A1267-7139-2929-F18A-F81B19DE6054" name="PK_SAMC">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:37:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5523F766-3B64-AA33-91D5-A83EE9E35F2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17A55F65-1838-E845-5F88-BEC3C40BD740" name="IN_FK_CONT_SAMC">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:06:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="036E4AC2-E251-140C-B7E0-461D48EB5FBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98CCB22B-AF4A-8619-617C-1CF9785A4570" name="FK_CONT_SAMC">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:01:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="036E4AC2-E251-140C-B7E0-461D48EB5FBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SAMC_IN_MES" directorySegmentName="seg_0" id="425A985E-209C-3CA0-370C-7E43A9012085">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:37:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<rule>SAMC_IN_MES IN (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

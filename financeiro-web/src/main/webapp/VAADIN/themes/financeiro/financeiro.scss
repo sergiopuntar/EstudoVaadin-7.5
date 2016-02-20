@@ -1,0 +1,11 @@
+@import "../valo/valo";
+@import "commons";
+@import "views/contas";
+@import "views/dominios";
+
+@mixin financeiro {
+	@include valo;
+	@include financeiro-commons;
+	@include financeiro-contas;
+	@include financeiro-dominios;
+}

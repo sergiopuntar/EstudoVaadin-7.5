@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd">
+	
+	<named-query name="Contas.buscarTodasComSaldosMensaisMaisRecentes">
+		<description>
+			Recupera todas as contas de relacionamento com as informações de saldo mensal mais
+			recente de cada.
+			As contas que não possuirem informações de saldo para nenhum mês também serão
+			recuperadas, contuido, sem nenhum informação a respeito do saldo.
+			Os objetos retornados são as seguintes:
+				0 - Instância da conta
+				1 - Instância do saldo mais recente
+		</description>
+		<query>
+			SELECT conta, saldo
+			FROM br.com.sgpf.app.financeiro.domain.entity.Conta conta
+			INNER JOIN FETCH conta.banco banco
+			LEFT JOIN conta.saldos saldo
+			WHERE saldo IS NULL
+			OR saldo.ano + saldo.mes = (
+				SELECT MAX (saldo2.ano + saldo2.mes)
+				FROM br.com.sgpf.app.financeiro.domain.entity.SaldoMensalConta saldo2
+				WHERE saldo2.conta = conta
+				AND saldo2.ano = (
+					SELECT MAX (saldo3.ano)
+					FROM br.com.sgpf.app.financeiro.domain.entity.SaldoMensalConta saldo3
+					WHERE saldo3.conta = conta
+				)
+			)
+			ORDER BY banco.nome ASC, conta.numeroAgencia ASC, conta.numeroConta ASC
+		</query>
+	</named-query>
+	
+</entity-mappings>

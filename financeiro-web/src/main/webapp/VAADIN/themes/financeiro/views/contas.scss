@@ -1,0 +1,35 @@
+@mixin financeiro-contas {
+	.contas {
+		.adicionar-conta.v-button-link, .adicionar-conta.v-button-link:hover {
+			color: $v-font-color;
+			text-decoration: none;
+			font-size: 1.8em;
+			font-weight: 200;
+			opacity: .5;
+		}
+		
+		.saldo-conta-card {
+			min-width: 12em;
+			padding: .5em 1em;
+			cursor: pointer;
+			line-height: 1.5em;
+			
+			.label-pair .v-spacing {
+				width: .4em;
+			}
+			
+			.v-label {
+				font-size: .9em;
+			}
+			
+			.nome-banco {
+				font-size: 1.3em;
+				padding-bottom: .2em;
+			}
+			
+			.numero-agencia, .numero-conta {
+				font-size: 1.1em;
+			}
+		}
+	}
+}

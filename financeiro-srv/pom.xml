@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>br.com.sgpf</groupId>
+		<artifactId>financeiro</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>financeiro-srv</artifactId>
+	<packaging>ejb</packaging>
+	<name>SGPF : Financeiro : Módulo Serviço</name>
+	<description>Módulo de serviço do sistema de gestão financeira pessoal</description>
+	
+	<dependencies>
+		<dependency>
+			<groupId>br.com.sgpf</groupId>
+			<artifactId>financeiro-inf</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>br.com.sgpf</groupId>
+			<artifactId>financeiro-dom</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	</dependencies>
+		
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ejb-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<ejbVersion>3.0</ejbVersion>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,17 @@
+@mixin financeiro-commons {
+	.main-layout {
+		min-width: 1000px;
+	}
+
+	.logo {
+		padding: 1em 2.2em;
+	}
+	
+	.positive {
+		color: green;
+	}
+	
+	.negative {
+		color: red;
+	}
+}

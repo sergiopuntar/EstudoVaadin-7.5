@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6E6C571-56C7-CCF6-AE14-2C70EFE9664A" name="BANCO">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:03:19 UTC</createdTime>
+<commentInRDBMS>Banco de relacionamento do usuário.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<abbreviation>BANC</abbreviation>
+<schemaObject>BE359C05-AFC2-02B9-7D43-1D709A4B9271</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BANC_ID_BANCO" id="AD00E9D4-71AD-6F94-0171-9C21A5C4DEE4">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:03:57 UTC</createdTime>
+<commentInRDBMS>Identificador do banco.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>808696AB-C718-4243-993A-5687CA6EC1A5</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BANC_SG_BANCO" id="6004CE69-6AF4-406C-9EBC-24A30303A488">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:30:27 UTC</createdTime>
+<commentInRDBMS>Sigla do banco.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BANC_NM_BANCO" id="F8F4160F-6857-9E37-E375-EFDD2039BE6A">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:03:57 UTC</createdTime>
+<commentInRDBMS>Nome do banco.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>640AC79A-97F3-D1B2-41B0-219D19328759</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BANC_DT_CRIACAO" id="5D41B7C0-6759-EB9E-A4EF-2813AB924460">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:37:39 UTC</createdTime>
+<commentInRDBMS>Data de criação do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BANC_DT_ATUALIZACAO" id="B2D22080-93A2-0E47-6DFA-26FA6EA653C1">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:37:39 UTC</createdTime>
+<commentInRDBMS>Data de atualização do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BANC_NR_VERSAO" id="DF34159D-82F8-C72A-C80D-AE3423E16AE3">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:37:39 UTC</createdTime>
+<commentInRDBMS>Número da versão do registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>2</use>
+<distinctType>E16E8197-194B-46E6-1291-8D34535B4090</distinctType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2730C0B0-B0A5-8F92-ACCF-88EC1BE6E011" name="PK_BANC">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 01:03:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD00E9D4-71AD-6F94-0171-9C21A5C4DEE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

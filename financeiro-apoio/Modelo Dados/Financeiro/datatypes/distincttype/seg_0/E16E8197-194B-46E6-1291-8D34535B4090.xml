@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DistinctType class="oracle.dbtools.crest.model.design.datatypes.DistinctType" name="Versao" directorySegmentName="seg_0" id="E16E8197-194B-46E6-1291-8D34535B4090">
+<createdBy>sergio.puntar</createdBy>
+<createdTime>2015-11-02 02:35:50 UTC</createdTime>
+<commentInRDBMS>Tipo para número de versão de um registro.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Financeiro</ownerDesignName>
+<predefined>false</predefined>
+<logicalDataType>LOGDT019</logicalDataType>
+<precision>38</precision>
+<scale>0</scale>
+</DistinctType>
